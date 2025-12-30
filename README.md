@@ -1,4 +1,16 @@
-Fork for ColoScreen project — synthetic medical image generation on toilet paper substrates with edge-case focus.
+# StyleGAN2-ADA-PyTorch for ColoScreen
+
+**Forked from NVlabs/stylegan2-ada-pytorch for synthetic medical image generation in the ColoScreen project.**
+
+This repository adapts NVIDIA's StyleGAN2-ADA for generating realistic synthetic images of blood and stool on toilet paper substrates, focusing on clinical edge cases (e.g., occult/maroon bleeding with complex stool textures).
+
+### Project-Specific Modifications & Usage
+- **Dataset**: Custom ~500k synthetic dataset with structured file naming for blood color, morphology, viscosity, stool texture, TP type, and lighting.
+- **Subset Training**: Training on filtered edge-case subsets (50–100k images) to target CNN underfitting on rare morphologies.
+- **Integration**: Generated images used for targeted augmentation in iterative CNN training loop.
+- **Example Commands**:
+  ```bash
+  python train.py --outdir=outputs/edge-maroon --data=/path/to/edge_subset --gpus=8 --cfg=stylegan2 --aug=adaFork for ColoScreen project — synthetic medical image generation on toilet paper substrates with edge-case focus.
 
 
 
