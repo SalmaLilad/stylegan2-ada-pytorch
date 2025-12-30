@@ -1,3 +1,9 @@
+Fork for ColoScreen project — synthetic medical image generation on toilet paper substrates with edge-case focus.
+
+
+
+
+
 ## StyleGAN2-ADA &mdash; Official PyTorch implementation
 
 ![Teaser image](./docs/stylegan2-ada-teaser-1024x252.png)
